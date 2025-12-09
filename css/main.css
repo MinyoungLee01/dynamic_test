@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: unset;
+}
+main.scroll {
+    overflow: hidden;
+    position: relative;
+}
+
+main .scrollbtn {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .4s;
+    z-index: 99;
+    cursor: pointer;
+}
+
+main .scrollbtn:hover {
+    opacity: 1;
+}
+
+main .scrollbtn.right {
+    background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0));
+    left: calc(100% - 100px);
+}
+
+main .scrollbtn.left {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    left: 0;
+}
+
+main .scrollbtn.none {
+    cursor: default;
+    opacity: 0;
+}
+
+main .I-flexbox {
+    width: 150%;
+    height: 100%;
+    display: flex;
+    transition: all 1s;
+}
+
+main .I-flexbox.move {
+    transform: translate(-33.3%, 0);
+}
+
+main .comparebox {
+    width: 50%;
+    height: 100%;
+    padding: 0 5px;
+    display: flex;
+    gap: 10px;
+}
+
+main .comparebox .preview {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+
+main .comparebox .preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .comparebox .preview:hover {
+    opacity: .7;
+}

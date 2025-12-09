@@ -1,0 +1,48 @@
+@charset "utf-8";
+@media screen and (max-width:700px) {
+    html {
+        font-size: 8px;
+    }
+
+    main.scroll {
+        height: auto;
+    }
+
+    main .I-flexbox {
+        flex-direction: column;
+    }
+
+    main.C-flexbox {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    main .comparebox {
+        width: 100vw;
+        flex-direction: column;
+        gap: 10px;
+        margin: 5px 0;
+    }
+
+    main .comparebox .preview {
+        height: 300px;
+        width: 100%;
+    }
+
+    main .scrollbtn {
+        display: none;
+    }
+
+    section.left,
+    section.right {
+        width: 100%;
+    }
+
+    section.left {
+        height: 40%;
+    }
+
+    section.right {
+        height: 60%;
+    }
+}

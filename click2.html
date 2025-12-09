@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映像2</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/click.css">
+    <link rel="stylesheet" href="css/resposive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/click.js" defer></script>
+</head>
+
+<body>
+    <div class="xbtn help">?</div>
+    <section class="popup none">
+        <p>時間をどう過ごすかで、「1分」の感じ方は変わるのか?<br>
+            このサイトはそんな仮説をゆるく検証するための実験ページです。<br>
+            ルールはかんたん。<br>
+            スタートボタンを押して映像を見はじめ、「そろそろ1分かな?」<br>
+            と思ったところでストップを押すだけ。<br>
+            計測後は、あなたの結果と、他の参加者たちの平均タイムを確認できます。<br>
+            感覚のズレを楽しみながら、“自分の時間”を見つめ直してみてください。</p>
+    </section>
+    <header>
+        <!-- <a href="index.html">HOME</a> -->
+        <h1>スタートを押して、ビデオを見て、1分後にストップを押そう。</h1>
+    </header>
+    <main class="C-flexbox">
+        <section class="left">
+            <div class="mov">
+                <iframe src="https://www.youtube.com/embed/YZcl5MTPdiI?si=hFJ1qEZypIa_aU2O&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section class="right">
+            <div class="record">
+                <!-- <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p>
+                <p>--:--:--</p> -->
+            </div>
+            <div class="average">
+                <p>平均 --:--:--</p>
+            </div>
+            <div class="btnbox">
+                <button class="start">スタート</button>
+                <button class="stop none">ストップ</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="left">
+            <p>University of Tsukuba</p>
+            <p>Art and Design</p>
+            <p>ダイナミックインタラクション</p>
+        </div>
+        <p class="right">&copy; 2025 LEE MINYOUNG All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
